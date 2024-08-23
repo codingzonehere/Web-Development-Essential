@@ -1,0 +1,107 @@
+*{
+  padding: 0; margin: 0; box-sizing: border-box;
+}
+body{
+  background-color: blueviolet;
+  font-family: sans-serif;
+}
+.click-btn {
+    position: relative;
+    width: 85%;
+    height: auto;
+    top: 300px;
+}
+.modal-Click-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scaleX(50%, 50%);
+}
+.cover-btn{
+  width: 100%;
+  top: 0 !important;
+}
+.modal-footer {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+.modal-header{
+  padding: 0 0 0px 0;
+  margin: 0;
+}
+.modal-body {
+  width: 96%;
+  margin: 8px auto;
+}
+/*
+.modal-dialog{
+  background: url(../img/cover\ image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 450px;
+  height: 350px;
+  top: 115px !important;
+}
+*/
+.modal-content {
+  background-color: #fff;
+  text-align: center;
+  padding: 0 0 40px 0;
+  border: none;
+  color: #000;
+  height: 350px !important;
+}
+.close{
+  margin: 25px !important;
+  color: #000 !important;
+}
+button:active, .button:active, button:focus, .button:focus, button:hover, .button:hover{
+  border:none !important;
+  outline:none !important;
+}
+.btnl{
+  width: 100% !important;
+}
+.cover-btn button{
+  outline: none;
+}
+.btn {
+    width: 100%;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(../font/CroissantOne-Regular.ttf);
+}
+h4, .h4 {
+  font-size: 2rem;
+  font-family: myFirstFont;
+  font-weight: bolder;
+  line-height: 0.9;
+}
+.modal-dialog {
+    top: 150px;
+}
+.cover-btn span {
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: system-ui;
+    color: #000;
+    opacity: 9 !important;
+    font-family: sans-serif;
+}
+.btn {
+  width: 56%;
+  top: 30%;
+  margin-top: 10px;
+}
+.btn-black {
+    background: #000 !important;
+    color: #fff;
+    font-size: 1.2rem;
+}
+a:hover {
+  color: #0a289b;
+  text-decoration: underline;
+  font-weight: 700;
+}
