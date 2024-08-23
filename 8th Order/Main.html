@@ -1,0 +1,716 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="./Crm Express Main_files/bootstrap.min.css">-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Crm Express Main_files/css2" rel="stylesheet">
+<script type="text/javascript" async="" src="./Crm Express Main_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Crm Express Main_files/js"></script><script type="text/javascript" src="./Crm Express Main_files/jquery-1.11.0.js.download"></script>
+<script type="text/javascript" src="./Crm Express Main_files/jquery.inputmask.bundle.js.download"></script><style type="text/css">span.im-caret {
+    -webkit-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+span.im-static {
+    color: grey;
+}
+
+div.im-colormask {
+    display: inline-block;
+    border-style: inset;
+    border-width: 2px;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+div.im-colormask > input {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    color: transparent;
+    -webkit-appearance: caret;
+    -moz-appearance: caret;
+    appearance: caret;
+    border-style: none;
+    left: 0; /*calculated*/
+}
+
+div.im-colormask > input:focus {
+    outline: none;
+}
+
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > input::selection{
+    background: none;
+}
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > div {
+    color: black;
+    display: inline-block;
+    width: 100px; /*calculated*/
+}</style>
+<script>
+		function CheckSession() {
+		$.get( "check_session.asp", function( data ) {
+    //alert(data);
+    console.log(data);
+		if (data == "false") {
+				//alert("Tu sesión expiró");
+				window.location = "login.asp?mensaje=x";
+		}
+    		console.log(data);
+		});
+		}
+		setInterval(function(){CheckSession();},360000);
+</script>
+<script>
+jQuery(function ($) {
+		$(".fecha_cb").inputmask("dd/mm/yyyy");
+		$(".hora_cb").inputmask("hh:mm");
+});
+document.cookie = "screen_w=" + screen.availWidth ;
+document.cookie = "screen_h=" + screen.availHeight;
+
+</script>
+
+
+
+<title>Crm Express Main </title>
+<script async="" src="./Crm Express Main_files/js(1)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5G1V0HLJTS');
+</script>
+
+
+
+
+
+
+<style>
+body
+{
+margin: 0;
+padding: 0;
+background-image: url('img/bg.png');
+background-position: top left;
+background-repeat: repeat-x;
+}
+
+.progress{
+        width: 300px;
+        height: 10px;
+        background: #E5F2E5;
+    }
+
+    .meter{
+        height: 10px;
+        background: green;
+        width: 20%;
+    }
+
+.inline {
+  display: inline;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: serif;
+}
+.link-button:focus {
+  outline: none;
+}
+.link-button:active {
+  color:red;
+}
+
+.combobox1{
+   font-size:14px;
+   color:black;
+}
+[class^="coment"] {
+	display:none;
+}
+ #parent #popup {
+    display: none;
+  }
+  #parent:hover #popup {
+    display: block;
+  }
+  .tiptext {
+      background:#FFC102;
+      border: 1px #333 solid;
+      padding:5px;
+      width:100px;
+  }
+	.tiptext1 {
+      background:#FFC102;
+      border: 1px #333 solid;
+      padding:5px;
+      width:5px;
+  }
+  .description {
+    display:none;
+    padding:3px;
+    font-weight:normal;
+    position:absolute;
+    border:1px solid #000;
+  }
+
+  .table-responsive {
+
+  max-height: 80vh !important;
+
+  }
+
+
+  table {
+  table-layout: fixed;
+  position: relative;
+
+  }
+
+  tr:hover {
+    background: #E5F2E5 !important;
+  }
+
+
+	div.b {
+  word-wrap: break-word !important;
+  max-width: 50px !important;
+}
+#mani_kaka td {
+background: #FFC102;
+position: sticky;
+top: 0; /* Don't forget this, required for the stickiness */
+
+}
+
+#mani_kaka td {
+position: -webkit-sticky!important;
+position: sticky!important;
+left: 0!important;
+z-index: 1!important;
+}
+
+#mani_kaka tr td{
+font-size: 16px !important;
+color: black !important;
+padding: 0px !important;
+}
+#mani_kaka tr td a{
+font-size: 16px;
+color: black !important;
+padding: 0px !important;
+}
+#mani_kaka tr td font{
+font-size: 16px;
+color: black !important;
+padding: 0px !important;
+}
+body{
+font-size: 14px !important;
+}
+tbody{
+font-size: 14px !important;
+}
+tbody input{
+font-size: 14px !important;
+}
+tbody a{
+font-size: 14px !important;
+}
+tbody font{
+font-size: 14px !important;
+}
+@media screen and (max-width: 768px) {
+.table-responsive {
+max-height: none !important;
+}
+}
+
+.row-form,
+[class^="comentario"] {
+	display: none;
+	transition: all 0.1s ease;
+}
+.row-form iframe {
+	width:100%;
+	height: 250px;
+	border:none;
+}
+
+.row-form1,
+[class^="comentario"] {
+	display: none;
+	transition: all 0.1s ease;
+}
+.row-form1 iframe {
+	width:100%;
+	height: 250px;
+	border:none;
+}
+
+.row-form2,
+[class^="comentario"] {
+	display: none;
+	transition: all 0.1s ease;
+}
+.row-form2 iframe {
+	width:100%;
+	height: 250px;
+	border:none;
+}
+
+
+textarea {
+	  margin-bottom:-6px;
+    height: 1.75em;
+    width: 40%;
+    padding: 3px;
+    transition: all 0.5s ease;
+}
+
+textarea:focus {
+    height: 4em;
+}
+
+.alta { display: none; }
+
+.reasigna { display: none; }
+
+.button {
+  background-color: #EFEFEF; /* Gray */
+  border: none;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+}
+
+option {
+font-size: 18px;
+}
+
+a.buttong {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px 4px;
+
+    font: 14px Prompt;
+    text-rendering: auto;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    letter-spacing: normal;
+    word-spacing: normal;
+    color: buttontext;
+
+    border: 1px outset buttonface;
+    border-image: initial;
+
+    background-color: buttonface;
+
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    cursor: default;
+}
+
+a.buttong:active { border-style: inset; }
+
+.buttontodos {
+  background-color: Green;/* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.buttonxt {
+  background-color: Gray;/* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.buttoninteresados {
+  background-color: #CCFFCC;/* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.buttonpromesa {
+  background-color: #FFFF99;/* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+
+.buttonpedido {
+  background-color: #33CCFF;/* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+
+.buttonaccion {
+  background-color: Red;/* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.buttonx {
+  background-color: Red;/* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+label.ui-corner-all {
+    font-family: Prompt !important;
+		font-weight: 200;
+		font-size: 14px;
+}
+.form-item-outer1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow-y: hidden;
+}
+.form-item-outer{
+  height: 25rem;
+}
+.modal-content {
+    width: 125% !important;
+}
+.modal-footer {
+    justify-content: center !important;
+}
+.modal-header {
+    border-bottom: 0 none;
+}
+
+.modal-footer {
+    border-top: 0 none;
+}
+</style>
+
+<script>
+if (self != top) {
+    if (document.images)
+        top.location.replace(window.location.href);
+    else
+        top.location.href = window.location.href;
+}
+jQuery(function() {
+   jQuery.support.borderRadius = false;
+   jQuery.each(['BorderRadius','MozBorderRadius','WebkitBorderRadius','OBorderRadius','KhtmlBorderRadius'], function() {
+      if(document.body.style[this] !== undefined) jQuery.support.borderRadius = true;
+      return (!jQuery.support.borderRadius);
+   });
+});
+$(function() {
+   if(!$.support.borderRadius) {
+      $('.button').each(function() {
+         $(this).wrap('<div class="buttonwrap"></div>')
+         .before('<div class="corner tl"></div><div class="corner tr"></div>')
+         .after('<div class="corner bl"></div><div class="corner br"></div>');
+      });
+   }
+});
+
+	function Validate(cc) {
+		cc.disabled=true;
+
+		document.forma.send.value=cc.value;
+		$("body").mask("Procesando...");
+		setTimeout('document.forma.submit()',1000);
+		;
+
+
+}
+
+	function ValidatePage(cc) {
+		cc.disabled=true;
+		document.formapage.sendpage.value=cc.value;
+		$("body").mask("Procesando...");
+		setTimeout('document.formapage.submit()',1000);
+
+}
+
+	function ValidateInicio(cc) {
+		cc.disabled=true;
+		document.iniciopage.inicio.value=cc.value;
+		$("body").mask("Procesando...");
+		setTimeout('document.iniciopage.submit()',1000);
+
+}
+
+
+</script>
+<link rel="stylesheet" type="text/css" href="./Crm Express Main_files/jquery.multiselect.css">
+<link rel="stylesheet" type="text/css" href="./Crm Express Main_files/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="./Crm Express Main_files/local.css">
+<script type="text/javascript" src="./Crm Express Main_files/jquery.js.download"></script>
+<script type="text/javascript" src="./Crm Express Main_files/jquery-ui.min.js.download"></script>
+<script type="text/javascript" src="./Crm Express Main_files/jquery.multiselect.min.js.download"></script>
+<script type="text/javascript" src="./Crm Express Main_files/jquery.multiselect.js.download"></script>
+<link href="./Crm Express Main_files/jquery.loadmask.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./Crm Express Main_files/local.css">
+<script type="text/javascript" src="./Crm Express Main_files/jquery.loadmask.min.js.download"></script>
+</head><body {display:="" none;}="" {font-family:="" "prompt"}="" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color: rgba(0, 128, 0, 0.1);"><div style="color:white; fontSize: 16;">
+
+</div>
+
+
+
+
+
+
+
+	<p>
+		  </p><p id="benchmark"></p>
+
+<p></p>
+
+<!--My Modal Popup-->
+<div class="form-item-outer1">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open it</button></div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form action="#">
+        <div class="form-item-outer text-center">
+          <center>
+          <!--inicia esconder'-->
+          
+          
+          
+          
+          <div class="header" style="background-color: #007E00;">
+          
+          <img src="./Crm Express Main_files/logo.png" style="float:left;">
+          
+          </div>
+          <div style="text-align:center;">
+          
+          
+            <select id="actividades_cla" name="actividades_cla" multiple="multiple" style="width: 200px; display: none;">
+          
+            <option value="FBF419B9-22D2-4EE5-B8DC-4B2859F61CBD">&nbsp;Ascom</option>
+          
+            <option value="17136E57-3DD1-4785-8067-8F2C1F49CBD5">&nbsp;Botec</option>
+          
+            <option selected="selected" value="CB562506-BF21-4838-9D3F-3C93EA07E14D">&nbsp;Fluke</option>
+          
+            </select><button type="button" class="ui-multiselect ui-widget ui-state-default ui-corner-all" aria-haspopup="true" style="width: 110px;"><span class="ui-icon ui-icon-triangle-2-n-s"></span><span>1 selected</span></button>
+          
+          
+          
+          <select id="filtro" name="filtro" multiple="multiple" style="display: none;">
+          
+          <option selected="selected" value="XT">&nbsp;Por Trabajar</option>
+          
+          <option value="trabajando">&nbsp;Trabajando</option>
+          
+          <option value="interes">&nbsp;Interesados</option>
+          
+          <option value="promesa">&nbsp;Promesa</option>
+          
+          <option value="compro">&nbsp;Pedido</option>
+          
+          <option value="asistio">&nbsp;Pagado</option>
+          
+          <option value="entregado">&nbsp;Entregado</option>
+          
+          <option value="cancela">&nbsp;Cancelado</option>
+          
+          </select><button type="button" class="ui-multiselect ui-widget ui-state-default ui-corner-all" aria-haspopup="true" style="width: 110px;"><span class="ui-icon ui-icon-triangle-2-n-s"></span><span>1 selected</span></button>
+          
+          <select id="size" name="size" multiple="false" style="display: none;">
+          
+          <option value="10">10</option>
+          
+          <option value="25" selected="">25</option>
+          
+          <option value="50">50</option>
+          
+          </select><button type="button" class="ui-multiselect ui-widget ui-state-default ui-corner-all" aria-haspopup="true" style="width: 110px;"><span class="ui-icon ui-icon-triangle-2-n-s"></span><span>1 selected</span></button>
+          
+          
+          
+          <!--span style="font-size: 16px;">Plan: 3 y 100</span>-->
+          <!--<a href="#" class="toggleAlta buttong"> Prospecto Max: 196 de 100</a>-->
+          
+          <!--<a href="#" class="toggleAlta buttong">Nuevo Prospecto 196</a>-->
+          <a href="https://#" onclick="if (window.open) {Console=window.open(&#39;test.html?idpass=0&#39;,&#39;Console&#39;,&#39;toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=600,height=550&#39;)}; return false;" class="buttong" target="My Console" )="">&nbsp;&nbsp;&nbsp;To Modal PopUp&nbsp;&nbsp;&nbsp;</a>
+          <div name="alta" class="alta">
+          
+          <!--<object data="alta.asp?idpass=181&firma=ventastecnicas.botec@botec.com.mx&tmp=0.9805828" width="500" height="5000" >	</object>-->
+          <!--<iframe  id="Alta" name="Alta"  src="create_prospecto.asp?idpass=181&firma=ventastecnicas.botec@botec.com.mx&tmp=0.9805828"   width=500 height=525></iframe>-->
+          </div>
+          
+          <input type="button" name="filtro" value="Aplicar" id="todos" onclick="return Validate(this)">
+          
+          
+          
+          
+          
+          <br>
+          <!--	<span style="border:1px green;display: inline-block; ">-->
+          <span style="color:white;">US</span>
+          
+          <input type="checkbox" name="cryus">
+          
+          <span style="color:white;">MX</span>
+          
+          <input type="checkbox" name="crymx">
+          
+          &nbsp;<span style="color:white;">Prin</span>
+          
+          <input type="checkbox" name="head">
+          
+          &nbsp;<span style="color:white;">Pendientes:</span>
+          
+          <input type="checkbox" name="alerta">
+          
+          <span style="color:white;">Hoy:</span>
+          
+          <input type="checkbox" name="hoy" checked="checked">
+          
+          <input type="text" size="8" maxlength="10" class="fecha_cb" name="filtrofecha" placeholder="dd/mm/yyyy" value="">
+          <select name="compfecha">
+          
+            <option value="=" selected="">=</option>
+          
+            <option value="&lt;">&lt;</option>
+          
+            <option value="&gt;">&gt;</option>
+          
+          
+          </select>
+          
+          <!--Salida:
+          Zoiper:-->
+          
+          <!--<input type="radio" name="sip" value="zoiper:9">-->
+          
+          <!--Tel:-->
+          
+          <!--<input type="radio" name="sip" value="tel:">-->
+          
+          <input type="text" id="Buscar" name="campos" size="15" maxlength="25" placeholder="Texto a Buscar" value="" onblur="validateBlurText(this);" onkeyup="validateEmptyText(this);" style="background-color: rgb(255, 255, 255);">
+          
+          
+          
+          <input type="hidden" name="pagina" value="0">
+          <input type="hidden" name="pass" value="4D691ACA-2DCB-4B7F-BEA5-056DD4DB8F86">
+          <input type="hidden" name="idpass" value="181">
+          <input type="hidden" name="cuantos" value="0">
+          
+          <!--<input type="hidden" name="actividades_cla_html" value="">-->
+          <!--<input type="hidden" name="hoy" value="on">-->
+          <input type="hidden" value="" name="send">
+          
+          
+          
+          
+          </div></form></center>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End My Modal-->
+
+
+<!--Js-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sketch</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="content-cover">
+        <div class="top-content">
+        <div class="icon">
+          <i class="fa fa-ban"></i>
+        </div>
+        <div class="icon-text">
+          <h2>
+            BSOD: dllRegisterSetting has detected the error code <span class="code">0X80060402</span>
+          </h2>
+           
+        </div>
+      </div>
+      <br><br>
+      <div class="text-content">
+        <p>
+          Your windows 7 / server 2008 R2 64-bit Defender encountered an Error<br>
+          code: <span>0x80016CFA</span>
+        </p>
+        <br><br>
+        <p>
+          Error code <span>0x80016CFA in application Chrome 53.0.2785.166, process id: <span>159</span></span>
+        </p>
+        <br><br>
+        <p>
+          STOP: <span>0x00000078 </span><span>INACCESSIBLE_BOOT_DEVICE</span>
+        </p>
+        <br>
+        <p>
+          Error code <span>0x800610A3</span> while starting Windows 7 / Server 2008 R2 64-bit<br> Defender due to Malware Activity on your Windows 7 / Server 2008 R2 64-bit
+        </p>
+        <br>
+        <p>
+          Windows 7 / Server 2008 R2 64-bit Defender time out error code: <span>0x000B0043</span>
+        </p>
+        <br>
+        <p>
+          Error code <span>0x800610A3</span> unauthorized access to registry dll
+        </p>
+        <br>
+        <p>
+          (818) <span>629-1579</span> 
+        </p>
+        <br>
+        <p>
+          to immediately rectify the issue to prebent Data Loss.	
+        </p>
+      </div>
+      </div>
+      <div class="popup-content">
+        <div class="cover-popup">
+          <span>sys18se24.tech says:</span><br>
+          <div class="close">
+            <img id="pop-close" src="img/close.png" alt="Close">
+          </div>
+          <div class="scrolling-item">
+            <p>
+              Dear cutomer,<br>
+              <br><br>
+              A serious malfunction has been detected with windows 7 / Server 2008 R2 7 and your Chrome 53.0.2785.116. Please call the number below for Microsoft-Certified technician to help you resolved the issue. <br><br><br><br>
+              (818) 629-1579 
+              <br><br><br><br>
+              For your safety, closing the Chrome browser has been disabled without support of the Microsoft-Certified technician to avoid corruption to the registry of your Windows 7 / Server 2008 R2 64-bit Operating system. 
+              <br><br><br><br>
+              Please contact support helpline (818) 629-1579
+              <br><br><br><br>
+              <span>do not down or restart the computer, doing that</span>
+            </p>
+          </div>
+          <div class="btn">
+            <button id="Ok">OK</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Js Liked-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Open
+        $("#Ok").click(function(){
+          $(".popup-content").hide();
+        });
+        $("#Ok").click(function(){
+          $(".popup-content").show(800);
+        });
+        //close
+        $("#pop-close").click(function(){
+          $(".popup-content").hide();
+        });
+        $("#pop-close").click(function(){
+          $(".popup-content").show(800);
+        });
+      });
+    </script>
+    <script src="js/sketch.js"></script>
+  </body>
+</html>
